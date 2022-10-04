@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+html{ 
+    margin: 0; 
+    padding: 0;
+    width: 100%
+}
+header{
+    min-height:80px ;
+    max-height: 100px;
+    background-color: rgb(70,60,80);
+    color: #fff;
+    margin: 0 ;
+    padding: 0;
+    border-bottom: 5px solid red;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+
+}
+header .image{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 5px 5px;
+    display: inline-block;
+    align-items: flex-end;
+    float:left;
+    object-fit: fill;
+}
+header ul{
+    height: 100%;
+    float: right;
+}
+header ul li{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    text-transform: capitalize;
+    transform: translate(-50%, 100%);
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header ul li:hover a{
+    color: red;
+   background-color: grey;
+}
+.toggle-button {
+    position: fixed;
+    top: .75rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: ;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin: 4px;
+}
+
+span{
+    font-size: 30px;
+    float: right;
+ /*   transform: translateX(-10px);*/
+    margin:0 ;
+    color: white;
+    padding: 1px;
+    box-sizing: fit-content;
+}
+.child{
+  /* border: 3px solid blue;
+    box-sizing: border-box; */ 
+     
+}
+.parent{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width:100% ;
+    /*transform: translateY(-3%);*/
+    
+    
+}
+.side_menu{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    /*width: 250px;*/
+    /*margin: 0;*/
+    padding: 0;
+/*    transform: translateY(2%);*/
+    border-radius: 5px;
+
+}
+.side_menu h1{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: rebeccapurple;
+}
+.side_menu ul{
+    height: 100vh;
+    width: 100%;
+    text-transform: capitalize;
+}
+.side_menu ul li{
+    margin: 0 auto;
+    line-height: 40px;
+    list-style: none;
+    font-size: 20px;
+}
+.side_menu ul li a{
+    color: bisque;
+    text-decoration: none;
+
+}
+.side_menu ul li:hover a{
+    color: aqua;
+    background-color: tomato;
+}
+.banner{
+    background:linear-gradient(rgba(255, 51,51,0.5),
+     rgba(100,255,100,0.89),
+      rgba(50,50,200,0.8)
+     );
+    /*margin: 0 auto;*/
+    height: 100vh;
+    transform: translateY(-0.5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*line-height: 7px;*/
+    /*width:80% ;
+*/
+border-radius: 5px;
+
+}
+.banner h1{
+   font-size: 100px;
+    /*width: 100%;*/
+    text-align: center;
+    text-transform: capitalize;
+    color: rebeccapurple;
+     
+}
+.hunbagur{
+    display: none;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+
+}
+
+@media (max-width: 700px){
+     .toggle-button {
+        display: flex
+        }
+        header ul{
+            display: none;
+        }
+    .hunbagur ul{
+    background-color: red;
+    height:200px;
+    float: right;
+    display: none;
+    
+}
+.banner .hunbagur {
+    height: 200px;
+    position: absolute;
+    top: -13px;
+    right: 0;
+
+}
+    .hunbagur ul li{
+    float: none;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    text-transform: capitalize;
+    transform: translate(-50%, 100%);
+    width: 100%;
+    text-align: center;
+}
+    .hunbagur ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+    .hunbagur ul li:hover a{
+    color: red;
+   background-color: grey;
+}
